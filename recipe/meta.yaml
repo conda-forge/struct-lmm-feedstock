@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,14 +19,14 @@ requirements:
     - pip
     - pytest-runner
     - python >3
-    - setuptools >=39.0.1
+    - setuptools >=49.6.0
   run:
-    - chiscore >=0.2.0
-    - glimix-core >=3.1.7
-    - numpy >=1.15
-    - numpy-sugar >=1.5.0
-    - pytest >=4
-    - pytest-doctestplus >=0.3.0
+    - chiscore >=0.2.2
+    - glimix-core >=3.1.11
+    - numpy >=1.17.4
+    - numpy-sugar >=1.5.1
+    - pytest >=5
+    - pytest-doctestplus >=0.8.0
     - python >3
 
 test:
